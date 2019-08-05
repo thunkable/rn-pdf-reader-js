@@ -214,10 +214,10 @@ class PdfReader extends Component<Props, State> {
             onError={onError}
             allowFileAccess
             originWhitelist={['http://*', 'https://*', 'file://*', 'data:*']}
-            style={[styles.webview, webviewStyle]}
+            style={[styles.webview]}
             source={{ uri: htmlPath }}
             mixedContentMode="always"
-            scrollEnabled={ false }
+            scrollEnabled
             height="100vh"
           />
         </View>
