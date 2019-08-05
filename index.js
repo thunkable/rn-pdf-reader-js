@@ -217,7 +217,7 @@ class PdfReader extends Component<Props, State> {
             style={[styles.webview, webviewStyle]}
             source={{ uri: htmlPath }}
             mixedContentMode="always"
-            scrollEnabled
+            scrollEnabled={ false }
             height="100vh"
           />
         </View>
